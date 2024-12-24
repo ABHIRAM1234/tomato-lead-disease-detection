@@ -1,48 +1,69 @@
 # Tomato Plant Disease Detection using TinyML
 
 ## Description
-This project develops a lightweight machine learning model using TinyML techniques to detect tomato plant diseases from leaf images in real-time. By leveraging TensorFlow Lite and Edge Impulse, the model runs directly on edge devices, providing immediate insights for agricultural decision-making. With a dataset of 16,011 images across 10 disease categories, the model undergoes rigorous preprocessing, augmentation, and optimization. Real-world testing validates its effectiveness, offering farmers a convenient tool for on-site disease diagnosis, potentially revolutionizing agricultural practices.
+This project focuses on developing a lightweight machine learning model using **TinyML techniques** to detect tomato plant diseases from leaf images in real-time. Leveraging **TensorFlow Lite** and **Edge Impulse**, the model operates directly on edge devices, providing immediate insights for agricultural decision-making. With a dataset of **16,011 images** spanning **10 disease categories**, the model undergoes rigorous preprocessing, augmentation, and optimization. Real-world testing validates its effectiveness, offering farmers a convenient tool for on-site disease diagnosis, potentially transforming agricultural practices.
+
+---
 
 ## Shortcomings
-- `Limited Dataset`: Despite efforts in augmentation, the dataset may still lack comprehensive representation of environmental factors affecting disease manifestation.
-- `Dependency on Image Quality`: The model's performance could be hindered by variations in image quality, such as lighting conditions and camera resolution, impacting its real-world applicability.
-- `Dependency of Connectivity`: Connectivity limitations in rural areas hinder timely updates and maintenance, compromising the effectiveness of edge-based disease detection models.
+- **Limited Dataset**: Despite augmentation efforts, the dataset may lack comprehensive representation of environmental factors influencing disease manifestation.
+- **Dependency on Image Quality**: Variations in image quality, such as lighting conditions and camera resolution, could hinder model performance in real-world scenarios.
+- **Connectivity Limitations**: Rural areas with limited connectivity face challenges in timely updates and maintenance, affecting the effectiveness of edge-based models.
 
-## Possible Future Extension
-- `Multi-Crop Expansion`: Adapting the model for diverse crops enhances its utility, catering to varied agricultural requirements.
-- `Mobile App Integration`: Creating a user-friendly mobile app enables convenient on-the-go disease diagnosis and intervention for farmers.
-- `Sensor Data Integration`: Incorporating environmental sensor data enhances disease detection accuracy by considering factors affecting plant health.
+---
 
-### Dataset Used - [Plant Disease](https://www.kaggle.com/datasets/emmarex/plantdisease)
+## Possible Future Extensions
+- **Multi-Crop Expansion**: Extending the model to support various crops enhances its utility for diverse agricultural needs.
+- **Mobile App Integration**: Developing a user-friendly mobile app enables farmers to diagnose diseases on the go, promoting accessibility.
+- **Sensor Data Integration**: Incorporating environmental sensor data (e.g., temperature, humidity) improves disease detection accuracy by accounting for external factors affecting plant health.
+
+---
+
+## Dataset Used
+- **[Plant Disease Dataset](https://www.kaggle.com/datasets/emmarex/plantdisease)**: Contains 16,011 tomato leaf images across 10 disease categories.
+
+---
 
 ## Key Features
-- `Dataset`: Plant Village dataset containing `16,011` tomato leaf images across `10` disease categories.
-- `Methodology`: Data preprocessing, model development, conversion, deployment, evaluation, and validation.
-- `Results`: Achieved accuracy of `89.6%` in disease identification.
-- `Expected Outcomes`: High-performing, lightweight ML model, successful deployment on edge devices, real-world effectiveness.
-- `Real-World Use`: Real-time plant health prediction via the Edge Impulse app on mobile devices.
+- **Dataset**: Plant Village dataset with 16,011 images categorized into 10 tomato leaf diseases.
+- **Methodology**: Includes data preprocessing, model development, conversion, deployment, evaluation, and validation.
+- **Results**: Achieved an accuracy of **89.6%** in disease identification.
+- **Expected Outcomes**: 
+  - Lightweight, high-performing ML model.
+  - Successful deployment on edge devices.
+  - Effective real-world disease diagnosis.
+- **Real-World Use**: Real-time plant health predictions via the **Edge Impulse app** on mobile devices.
+
+---
 
 ## Input Images
-![alt text](image-1.png)
-## Model
-![alt text](image.png)
+![Input Leaf Image](image-1.png)
+
+---
+
+## Model Overview
+![Model Architecture](image.png)
+
+---
+
 ## Output
-![alt text](image-2.png)
-![alt text](image-3.png)
-![image](https://github.com/its-kumar-yash/Tomato-Plant-Disease-Detection-Model/assets/97521394/1b2f2b2a-c3ef-48f3-a90a-2e36dd7352f4)
-![image](https://github.com/its-kumar-yash/Tomato-Plant-Disease-Detection-Model/assets/97521394/764391fe-21d2-4cd4-ae34-4dea84c5dad0)
+![Prediction Output](image-2.png)  
+![Disease Diagnosis](image-3.png)  
 
+![Edge Impulse Prediction Example](https://github.com/its-kumar-yash/Tomato-Plant-Disease-Detection-Model/assets/97521394/1b2f2b2a-c3ef-48f3-a90a-2e36dd7352f4)  
+![Edge Impulse Results](https://github.com/its-kumar-yash/Tomato-Plant-Disease-Detection-Model/assets/97521394/764391fe-21d2-4cd4-ae34-4dea84c5dad0)
 
+---
 
 ## Technology Stack
-- TensorFlow
-- TensorFlow Lite
-- Edge Impulse
-- Python
+- **TensorFlow**
+- **TensorFlow Lite**
+- **Edge Impulse**
+- **Python**
+
+---
 
 ## How to Use
-- Clone the repository `git clone https://github.com/its-kumar-yash/Tomato-Plant-Disease-Detection-Model.git`
-- Download the dataset.
-- Install required dependencies.
-- Run the `jupiter notebook`.
-- Upload `tf_lite_quantized_model.tflite` file on `Edge Impulse` and Build the model.
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/its-kumar-yash/Tomato-Plant-Disease-Detection-Model.git
